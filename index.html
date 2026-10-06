@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Dudu 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="particles"></div>
+  <div id="confetti"></div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Play music">🎵 <span>Play our song</span></button>
+  <audio id="birthdaySong" loop preload="auto">
+    <source src="janmalu-enni-maarina.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 01: INTRO -->
+  <section class="screen active" id="intro">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="intro-card">
+      <div class="eyebrow">A little secret made with love ✨</div>
+      <div class="date-pill">02 • OCTOBER • 2005</div>
+      <h1>For my girl,<br><span>Dudu</span> 💗</h1>
+      <div class="duo small">🐼 Bubu ❤️ Dudu 🧸</div>
+      <p class="lead">There is a tiny surprise waiting for someone who means a lot to me.</p>
+
+      <div class="gift-wrap">
+        <div class="sparkle s1">✦</div><div class="sparkle s2">✧</div><div class="sparkle s3">✦</div>
+        <button id="gift" class="gift" aria-label="Open the gift">
+          <span class="gift-lid"></span>
+          <span class="gift-box"></span>
+          <span class="ribbon ribbon-v"></span>
+          <span class="ribbon ribbon-h"></span>
+          <span class="bow left"></span><span class="bow right"></span>
+        </button>
+      </div>
+
+      <button id="openGift" class="primary-btn">OPEN YOUR SURPRISE 🎁</button>
+      <p class="tiny">Tap the gift, birthday girl 👀</p>
+    </div>
+  </section>
+
+  <!-- 02: COUNTDOWN -->
+  <section class="screen" id="countdownScreen">
+    <div class="count-card">
+      <p class="eyebrow">Wait for it...</p>
+      <div id="countNumber">3</div>
+      <p>Something special is about to begin ✨</p>
+    </div>
+  </section>
+
+  <!-- 03: HERO -->
+  <section class="screen" id="hero">
+    <div class="hero-inner">
+      <div class="duo">🐼 <span>Bubu</span> ❤️ <span>Dudu</span> 🧸</div>
+      <div class="balloon-row"><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span></div>
+      <p class="eyebrow">02 October • Your day • Your story</p>
+      <h2>Happy Birthday</h2>
+      <h1>Dudu</h1>
+      <div class="cake">🎂</div>
+      <p class="hero-copy">21 years of being wonderfully, uniquely <b>you</b>. Here's to another beautiful chapter. 🥹💗</p>
+      <div class="hero-buttons">
+        <button class="primary-btn next" data-next="message">READ MY MESSAGE 💌</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: MESSAGE -->
+  <section class="screen" id="message">
+    <div class="content-card message-card">
+      <p class="eyebrow">From Bubu 🐼</p>
+      <h2>Dear Dudu...</h2>
+      <div class="letter">
+        <p id="typedMessage"></p><span class="cursor">|</span>
+      </div>
+      <button class="primary-btn next" data-next="memories">OUR LITTLE MEMORIES 📸</button>
+    </div>
+  </section>
+
+  <!-- 05: MEMORIES -->
+  <section class="screen" id="memories">
+    <div class="wide-card">
+      <p class="eyebrow">Our memories ✨</p>
+      <h2>Little moments, big memories</h2>
+      <p class="sub">A few moments I will always keep 💗</p>
+      <div class="photo-grid">
+        <figure><img src="images/photo1.jpg" alt="Memory 1"><figcaption>Our first memory 💗</figcaption></figure>
+        <figure><img src="images/photo2.jpg" alt="Memory 2"><figcaption>That crazy day 😂</figcaption></figure>
+        <figure><img src="images/photo3.jpg" alt="Memory 3"><figcaption>Our favorite moment ✨</figcaption></figure>
+        <figure><img src="images/photo4.jpg" alt="Memory 4"><figcaption>Forever us 🫶</figcaption></figure>
+      </div>
+      <button class="primary-btn next" data-next="contact">NAA PHONE LO NUVVU 📱</button>
+    </div>
+  </section>
+
+  <!-- 05c: CONTACT NAME -->
+  <section class="screen" id="contact">
+    <div class="wide-card contact-wrap">
+      <p class="eyebrow">Bubu's phone 📱</p>
+      <h2>Naa phone lo nee number ela save chesano telusa?</h2>
+      <p class="sub">Tap chesi chudu 👇</p>
+      <button id="revealContact" class="primary-btn">REVEAL 🔓</button>
+      <div id="contactReveal" class="contact-reveal">
+        <div class="phone">
+          <div class="avatar">D</div>
+          <div class="contact-name">Dudu 🧸🐻💖</div>
+          <div class="contact-sub">Mobile</div>
+          <div class="contact-actions"><span>📞<small>Call</small></span><span>💬<small>Message</small></span><span>🎥<small>Video</small></span></div>
+        </div>
+        <p class="nick-title">Nenu ninnu ela pilustanu? 🥰</p>
+        <div class="chips"><span>Dudu 🧸</span><span>Laddu 🍬</span><span>My soul 💫</span></div>
+      </div>
+      <button class="primary-btn next" data-next="chats">MANA CHATS &amp; CALLS 💬</button>
+    </div>
+  </section>
+
+  <!-- 05d: CHATS & CALLS -->
+  <section class="screen" id="chats">
+    <div class="wide-card">
+      <p class="eyebrow">Mana chats, mana calls</p>
+      <h2>Matladina prathi moment 💬📞</h2>
+      <p class="sub">Swipe chey 👉</p>
+      <div class="snap">
+        <figure class="snap-item"><img src="images/chat-whatsapp.jpg" alt="WhatsApp chat" loading="lazy"><figcaption>Mana WhatsApp chat 💚</figcaption></figure>
+        <figure class="snap-item"><img src="images/chat-insta.jpg" alt="Instagram chat" loading="lazy"><figcaption>Mana Insta chat 💜</figcaption></figure>
+        <figure class="snap-item call-item">
+          <div class="call-card">
+            <div class="avatar">D</div>
+            <div class="contact-name">Dudu 🧸🐻💖</div>
+            <div class="call-time">26:30</div>
+            <div class="call-sub">Oka call lone 26 min 30 sec 😂</div>
+            <div class="hang">📞</div>
+          </div>
+          <figcaption>Mana calls... endless 📞</figcaption>
+        </figure>
+      </div>
+      <button class="primary-btn next" data-next="dance">MANA DANCE 💃</button>
+    </div>
+  </section>
+
+  <!-- 05f: DANCE -->
+  <section class="screen" id="dance">
+    <div class="wide-card video-wide">
+      <p class="eyebrow">Mana stage moment 🎭</p>
+      <h2>Mana dance 💃🐼🧸</h2>
+      <p class="sub">Memu iddaram kalisi vesina dance.</p>
+      <video controls playsinline preload="none" poster="images/posters/dance.jpg" src="videos/dance.mp4"></video>
+      <button class="primary-btn next" data-next="reels">NEE KOSAM REELS 📲</button>
+    </div>
+  </section>
+
+  <!-- 05g: SAVED REELS -->
+  <section class="screen" id="reels">
+    <div class="wide-card">
+      <p class="eyebrow">Instagram lo save chesinavi</p>
+      <h2>Nee kosam save chesina reels 📲</h2>
+      <p class="sub">Chusina prathi reel lo ninne anukunna 💗</p>
+      <div class="snap">
+        <figure class="snap-item"><video controls playsinline preload="none" poster="images/posters/reel1.jpg" src="videos/reel1.mp4"></video><figcaption>Reel 1 🚌</figcaption></figure>
+        <figure class="snap-item"><video controls playsinline preload="none" poster="images/posters/reel2.jpg" src="videos/reel2.mp4"></video><figcaption>Reel 2 💞</figcaption></figure>
+      </div>
+      <button class="primary-btn next" data-next="friendship">FRIENDSHIP DAY STATUS 🤝</button>
+    </div>
+  </section>
+
+  <!-- 05h: FRIENDSHIP DAY -->
+  <section class="screen" id="friendship">
+    <div class="wide-card">
+      <p class="eyebrow">Friendship Day status 🫶</p>
+      <h2>Happy Friendship Day, Dudu 🧸</h2>
+      <p class="sub">Friendship Day ki nenu pettina status videos 💙</p>
+      <div class="snap">
+        <figure class="snap-item"><video controls playsinline preload="none" poster="images/posters/fd1.jpg" src="videos/fd1.mp4"></video><figcaption>2022 → 2026 🤝</figcaption></figure>
+        <figure class="snap-item"><video controls playsinline preload="none" poster="images/posters/fd2.jpg" src="videos/fd2.mp4"></video><figcaption>Best friends 🤍</figcaption></figure>
+      </div>
+      <button class="primary-btn next" data-next="reasons">WHY YOU'RE MY GIRL ❤️</button>
+    </div>
+  </section>
+
+  <!-- 06: REASONS -->
+  <section class="screen" id="reasons">
+    <div class="wide-card">
+      <p class="eyebrow">Tap a card</p>
+      <h2>Why you're special</h2>
+      <div class="reason-grid">
+        <button class="reason" data-text="Because your smile has a way of making even a bad day feel a little lighter. 🌸">🌸<small>Your smile</small></button>
+        <button class="reason" data-text="Because your crazy side is one of my favorite things about you. Never lose it. 😂">😂<small>Your crazy side</small></button>
+        <button class="reason" data-text="Because our friendship is made of small moments that somehow became huge memories. 🤝">🤝<small>Our friendship</small></button>
+        <button class="reason" data-text="Because you're simply Dudu. That's already a pretty special reason. ✨">💗<small>Just you</small></button>
+      </div>
+      <div id="reasonText">Choose one... I have something to tell you 💌</div>
+      <button class="primary-btn next" data-next="wishes">MY BIRTHDAY WISHES FOR YOU 💌</button>
+    </div>
+  </section>
+
+  <!-- 06b: WISHES -->
+  <section class="screen" id="wishes">
+    <div class="wide-card">
+      <p class="eyebrow">Birthday 2026 💌</p>
+      <h2>Nee birthday ki na wishes</h2>
+      <p class="sub">2nd October na status lo, stories lo, DM lo nenu chesina wishes. Swipe chey 👉</p>
+      <div class="snap">
+        <figure class="snap-item"><img src="images/wish-status1.jpg" alt="Birthday status" loading="lazy"><figcaption>My status 💗</figcaption></figure>
+        <figure class="snap-item"><img src="images/wish-story.jpg" alt="Birthday story" loading="lazy"><figcaption>Insta story 🎂</figcaption></figure>
+        <figure class="snap-item"><img src="images/wish-status2.jpg" alt="Birthday status 2" loading="lazy"><figcaption>Status wish 💌</figcaption></figure>
+        <figure class="snap-item"><video controls playsinline preload="none" poster="images/posters/bd1.jpg" src="videos/bd1.mp4"></video><figcaption>Birthday video 1 🎬</figcaption></figure>
+        <figure class="snap-item"><video controls playsinline preload="none" poster="images/posters/bd2.jpg" src="videos/bd2.mp4"></video><figcaption>Birthday video 2 🎬</figcaption></figure>
+      </div>
+      <button class="primary-btn next" data-next="secret">ONE LAST SURPRISE 🔐</button>
+    </div>
+  </section>
+
+  <!-- 07: SECRET -->
+  <section class="screen" id="secret">
+    <div class="secret-card">
+      <div class="lock" id="lock">🔐</div>
+      <p class="eyebrow">A message only Dudu should read</p>
+      <h2>Unlock this 💝</h2>
+      <p class="sub">Press and hold the heart for 2 seconds.</p>
+      <button id="holdHeart" class="heart-btn">❤️</button>
+      <div id="secretReveal" class="secret-reveal">
+        <h3>Janmalu enni maarina... 🫶</h3>
+        <p>Some friendships deserve to be carried through every version of life. Whatever changes, I hope there will always be a little place in your world for me.</p>
+        <strong>Happy Birthday, my girl. ❤️</strong>
+      </div>
+      <button id="finalBtn" class="primary-btn hidden">MAKE A WISH ✨</button>
+    </div>
+  </section>
+
+  <!-- 08: FINAL -->
+  <section class="screen" id="final">
+    <canvas id="fireworks"></canvas>
+    <div class="final-card">
+      <p class="eyebrow">02 • 10 • 2026</p>
+      <h2>Happy Birthday</h2>
+      <h1>Dudu 💗</h1>
+      <div class="big-cake">🎂</div>
+      <p>May this year bring you more laughter, more confidence, beautiful opportunities, and memories you will never want to forget.</p>
+      <p class="signature">Always keep smiling,<br><b>— Bubu ❤️</b></p>
+      <button id="wishBtn" class="primary-btn">MAKE A WISH 🎆</button>
+      <p id="wishDone" class="wish-done">✨ Wish sent to the universe...</p>
+      <button class="primary-btn next" data-next="love">ONE LAST THING 💌</button>
+    </div>
+  </section>
+
+  <!-- 09: LOVE YOU (last page) -->
+  <section class="screen" id="love">
+    <div class="love-card">
+      <div class="love-heart">💖</div>
+      <h2>Love you, Dudu</h2>
+      <p class="love-sub">Always loving you and miss you a lot 🥺</p>
+      <p class="love-text">Nuvvu ekkada unna, enni rojulu matladakapoyina, nuvvu eppudu naa heart lo untav. Stay happy, keep smiling, and never forget how special you are to me. 🌸</p>
+      <div class="love-emojis">🌷 ✨ 🫶 ✨ 🌷</div>
+      <p class="signature">Forever yours,<br><b>— Bubu ❤️</b></p>
+      <button id="saveLove" class="primary-btn">DOWNLOAD THIS MESSAGE 💌</button>
+      <p id="saveDone" class="wish-done">Saved 💕</p>
+      <button id="restart" class="text-btn">Replay the surprise ↻</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
